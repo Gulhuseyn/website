@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en,az" dir="ltr">
+  <head>
+    <meta charset="utf-8";
+    name="viewport"content="width=device-width,initial-scale=1.0">
+    <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      font:15px/1.8 "Lato", sans-serif;
+      color: 772;
+    }
+    .fon1, .fon2, .fon3{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      width: 100%
+    }
+    .fon1{
+      background-image: url("images/blankpage.jpg");
+      height: 500px;
+      min-height: 100%;
+    }
+    .fon2{
+    background-image:url("images/blankphone.jpg");
+    background-position: center;
+      height: 400px;
+    }
+    .fon3{
+      background-image: url("images/map.jpg");
+      height: 400px;
+    }
+    @media only screen and (max-device-width: 1024px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+      }
+    }
+    #naviqasiya {
+      overflow: hidden;
+      background-color: #333;
+
+    }
+    #naviqasiya a {
+      float: left;
+      text-align: center;
+      font-size: 17px;
+      color:#f2f2f2;
+      padding: 14px 16px;
+      text-decoration:none;
+    }
+
+    #naviqasiya a:hover{
+      color: black;
+      background-color: #ddd;
+    }
+    #naviqasiya a.active{
+      background-color:green;
+      color: white;
+    }
+    .content{
+      padding: 16px;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+
+    .caption{
+      position: absolute;
+      left: 0;
+      top: 25%;
+      font-size: 40px;
+      text-align: center;
+      text-decoration: none;
+      width: 100%}
+      .caption span.border{
+        color: #16264c;
+        padding: 10px 5px;
+        font-size: 30px;
+      }
+
+      .icon{
+        float: left;
+        width: 140px;
+        height: 140px;
+        padding: 10px 10px;
+        opacity: 0.6;
+        margin-top: 130px;
+        margin-left: 20px;
+
+      }
+    .icon:hover{
+      opacity: 1.0
+    }
+    .priority{
+      z-index: 1;
+    }
+    </style>
+    <title></title>
+  </head>
+  <body>
+    <div id="naviqasiya"class="priority">
+      <a href="homepage.html">Ana sehife</a>
+      <a href="javascript:void(0)">Yenilikler</a>
+      <a class="active" href=contactpage.html>Elaqe</a>
+      <a href="javascript:void(0)">Haqqinda</a>
+      <a href=index.html>Koronavirus</a>
+    </div>
+    <div class="fon1">
+      <div class="caption">
+        <span class="border">
+          Contact numbers:<br>
+          (050)309-63-91<br>
+          (050)309-64-92<br>
+          (050)309-65-93<br>
+          (050)309-66-94<br>
+        </span>
+      </div>
+    </div>
+    <div class="fon2">
+      <div style="font-size:40px;text-align:center;color:#dd2a7b;">
+        Social Media
+      </div>
+        <a href="https://www.facebook.com/profile.php?id=100011402351994">
+          <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_BSMj87ul27eHsGx6QZAKDfYIV-T8OhEnlmWdIkfdNoTCixNY&usqp=CAU" alt="Facebook"title="Gulhuseyn Sadiqli">
+        </a>
+        <a href="https://www.instagram.com/gulhuseyn_sadiqli/">
+          <img class="icon" src="images/instagram.jpg" alt="instagram"title="gulhuseyn_sadiqli">
+        </a>
+        <a href="https://www.reddit.com/user/Killergarden_">
+          <img class="icon" src="https://robertkatai.com/wp-content/uploads/2018/09/wsi-imageoptim-reddit-marketing-.jpg" alt="Reddit"title="Killergarden_">
+        </a>
+    </div>
+    <div class="fon3">
+      <div style="font-size:40px;text-align:center;color:#734d26;">
+        Adress
+      </div>
+    </div>
+    <script>
+    window.onscroll = function()
+    {myFunction()};
+    var naviqasiya =
+    document.getElementById("naviqasiya");
+    var sticky =naviqasiya.offsetTop;
+
+    function myFunction(){
+      if (window.pageYOffset >= sticky)
+      {
+        naviqasiya.classList.add("sticky");
+      }
+    }
+    </script>
+  </body>
+</html>
