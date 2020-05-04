@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en,az" dir="ltr">
   <head>
     <meta charset="utf-8";
     name="viewport"content="width=device-width,initial-scale=1.0">
-    <title>Webpage</title>
     <style>
-    body,html{
-      font-family: sans-serif;
+    body, html {
+      height: 100%;
       margin: 0;
-    }
-    .sekil1, .sekil2, .sekil3{
-      height: 500px;
-      width: 100%;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      display: block;
+      font:15px/1.8 "Lato", sans-serif;
+      color: 772;
+      font-family: Arial;
+      font-size: 17px;
     }
     #naviqasiya {
       overflow: hidden;
@@ -27,19 +22,10 @@
       text-align: center;
       font-size: 17px;
       color:#f2f2f2;
-      padding: 19px 16px;
+      padding: 14px 16px;
       text-decoration:none;
     }
-    .priority{
-      z-index: 1;
-    }
-    .caption {
-      position: absolute;
-      top: 35%;
-      width: 100%;
-      text-align: center;
-      color: #000;
-    }
+
     #naviqasiya a:hover{
       color: black;
       background-color: #ddd;
@@ -56,23 +42,47 @@
       top: 0;
       width: 100%;
     }
+    .priority{
+      z-index: 1;
+    }
+    * {
+  box-sizing: border-box;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 20;
+  min-width: 100%;
+  min-height:100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
     </style>
   </head>
   <body>
     <div id="naviqasiya"class="priority">
-      <a class="active" href="javascript:void(0)">Ana sehife</a>
-      <a href="newspage.html">Yenilikler</a>
-      <a href=contactpage.html>Elaqe</a>
-      <a href="aboutpage.html">Haqqinda</a>
+      <a class="active" href="homepage.html">Ana sehife</a>
+      <a  href="newspage.html">Yenilikler</a>
+      <a  href=contactpage.html>Elaqe</a>
+      <a  href="aboutpage.html">Haqqinda</a>
       <a href=index.html>Koronavirus</a>
     </div>
-    <div>
-    <img class="sekil1" src="https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-ppt-minimalistic-geometric-background-backgroundppt-template-backgroundsimplecool-image_54790.jpg" alt="sekil1">
-<span class="caption"style="font-size:50px" >Ana Sehife</span>
-  </div>
-    <img class="sekil2" src="https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg" alt="sekil2">
-    <img class="sekil3" src="https://149349300.v2.pressablecdn.com/wp-content/uploads/2019/06/3d-cube-background-4k-yo.jpg" alt="sekil3">
+    <video autoplay muted loop id="myVideo">
+  <source src="images/backgroundsky.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
 
+<div class="content">
+  <h1>Ana sehife</h1>
+  <p>Bu sehife Gulhuseyn Sadiqli terefinden hazirlanmisdir ve hal-hazirda hec bir meqsedi yoxdur.Irad ve teklifleriniz ucun elaqe bolmesindeki email vasitesi ile elaqe saxlamaginiz xais olunur.<br>Hormetle:Gulhuseyn Sadiqli</p>
+</div>
     <script>
     window.onscroll = function()
     {myFunction()};

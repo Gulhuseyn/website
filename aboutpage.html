@@ -1,14 +1,21 @@
 <!DOCTYPE html>
-<html lang="en,az" dir="ltr">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8";
     name="viewport"content="width=device-width,initial-scale=1.0">
+    <title>Webpage</title>
     <style>
-    body, html {
-      height: 100%;
+    body,html{
+      font-family: sans-serif;
       margin: 0;
-      font:15px/1.8 "Lato", sans-serif;
-      color: 772;
+    }
+    .sekil1, .sekil2, .sekil3{
+      height: 500px;
+      width: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      display: block;
     }
     #naviqasiya {
       overflow: hidden;
@@ -20,10 +27,19 @@
       text-align: center;
       font-size: 17px;
       color:#f2f2f2;
-      padding: 14px 16px;
+      padding: 19px 16px;
       text-decoration:none;
     }
-
+    .priority{
+      z-index: 1;
+    }
+    .caption {
+      position: absolute;
+      top: 35%;
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
     #naviqasiya a:hover{
       color: black;
       background-color: #ddd;
@@ -40,20 +56,23 @@
       top: 0;
       width: 100%;
     }
-    .priority{
-      z-index: 1;
-    }
     </style>
   </head>
   <body>
     <div id="naviqasiya"class="priority">
       <a href="homepage.html">Ana sehife</a>
-      <a  href="newspage.html">Yenilikler</a>
-      <a  href=contactpage.html>Elaqe</a>
-      <a class="active" href="aboutpage.html">Haqqinda</a>
+      <a href="newspage.html">Yenilikler</a>
+      <a href=contactpage.html>Elaqe</a>
+      <a class="active"  href="aboutpage.html">Haqqinda</a>
       <a href=index.html>Koronavirus</a>
     </div>
-    <h1 style="text-align:center;">Sorry,not ready yet</h1>
+    <div>
+    <img class="sekil1" src="https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-ppt-minimalistic-geometric-background-backgroundppt-template-backgroundsimplecool-image_54790.jpg" alt="sekil1">
+<span class="caption"style="font-size:50px" >About page</span>
+  </div>
+    <img class="sekil2" src="https://i1.wp.com/static.web-backgrounds.net/uploads/2012/08/City_Landscape_Background.jpg" alt="sekil2">
+    <img class="sekil3" src="https://149349300.v2.pressablecdn.com/wp-content/uploads/2019/06/3d-cube-background-4k-yo.jpg" alt="sekil3">
+
     <script>
     window.onscroll = function()
     {myFunction()};
