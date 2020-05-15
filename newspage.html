@@ -43,7 +43,19 @@
     .priority{
       z-index: 1;
     }
-    </style>
+    .animation{
+      width: 100px;
+      height: 100px;
+      animation-name: test;
+      animation-duration: 8s;
+      background-color: blue;
+      position: relative;
+    }
+    @keyframes test {
+      0%{background-color: blue;left:700px;top:0px;}
+      100%{background-color:blue;left:0px;top:0px; }
+    }
+</style>
   </head>
   <body>
     <div id="naviqasiya"class="priority">
@@ -53,6 +65,9 @@
       <a href="aboutpage.html">Haqqinda</a>
       <a href=index.html>Koronavirus</a>
     </div>
+    <button type="button"class="animation" name="button">
+      <a href="https://www.w3schools.com/js/js_numbers.asp">Hey</a>
+    </button>
     <h1 style="text-align:center;">Nothing yet,sorry</h1>
     <script>
     window.onscroll = function()
