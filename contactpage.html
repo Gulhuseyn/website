@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8";
     name="viewport"content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
     body, html {
       height: 100%;
@@ -120,17 +121,17 @@
         </span>
       </div>
     </div>
-    <div class="fon2">
+    <div class="fon2"data-aos="fade-left">
       <div style="font-size:40px;text-align:center;color:#dd2a7b;">
         Social Media
-      </div>
-        <a href="https://www.facebook.com/profile.php?id=100011402351994">
+      </div >
+        <a href="https://www.facebook.com/profile.php?id=100011402351994"data-aos="fade-right">
           <img class="icon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT_BSMj87ul27eHsGx6QZAKDfYIV-T8OhEnlmWdIkfdNoTCixNY&usqp=CAU" alt="Facebook"title="Gulhuseyn Sadiqli">
         </a>
-        <a href="https://www.instagram.com/gulhuseyn_sadiqli/">
+        <a href="https://www.instagram.com/gulhuseyn_sadiqli/"data-aos="fade-right">
           <img class="icon" src="images/instagram.jpg" alt="instagram"title="gulhuseyn_sadiqli">
         </a>
-        <a href="https://www.reddit.com/user/Killergarden_">
+        <a href="https://www.reddit.com/user/Killergarden_"data-aos="fade-right">
           <img class="icon" src="https://robertkatai.com/wp-content/uploads/2018/09/wsi-imageoptim-reddit-marketing-.jpg" alt="Reddit"title="Killergarden_">
         </a>
     </div>
@@ -158,5 +159,12 @@
       }
     }
     </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 280,
+      duration: 1000
+    });
+  </script>
   </body>
 </html>
